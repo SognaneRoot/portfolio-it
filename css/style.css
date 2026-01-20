@@ -71,7 +71,7 @@ nav a{
 }
 
 .hero h1{
-  font-size: clamp(2.2rem, 5vw, 3.5rem)
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
   color: var(--color-text);
   margin-bottom: var(--space-sm);
   line-height: 1.2;
@@ -114,4 +114,49 @@ nav a{
 .btn-secondary:hover {
   background-color: var(--color-primary);
   color: white;
+}
+.projects {
+  margin-top: var(--space-lg);
+}
+
+.projects h2 {
+  font-size: 2rem;
+  margin-bottom: var(--space-md);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-md);
+}
+
+.projects-card {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: var(--space-md);
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.projects-card h3 {
+  font-size: 1.3rem;
+  color: var(--color-text);
+}
+
+.projects-card p {
+  color: var(--color-muted);
+  flex-grow: 1;
+}
+.project-card a {
+  align-self: flex-start;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.project-card a:hover {
+  text-decoration: underline;
 }
